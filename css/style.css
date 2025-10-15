@@ -1,0 +1,134 @@
+
+:root{
+    --1nd-color : rgb(40,40,40);
+    --2nd-color : rgb(40,40,40);
+    --3nd-color : rgb(100,100,100);
+    --background-colar : rgb(32,32,32);
+    --boder-colar : rgb(50,50,50);
+    --text-colar : rgb(196,196,196);
+}
+
+.body{
+    background-color: var(--background-colar);
+    margin: 0 auto;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.maingrid > div:last-child {
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  gap: 10px;
+}
+
+.titlebar{
+    overflow: hidden;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    height: 45px;
+    background-color: var(--1nd-color);
+    border-bottom: solid 1px;
+    border-color: var(--boder-colar);
+}
+
+.titlebar .tile{
+    text-align: left;
+    font-size: 30px;
+    color: var(--text-colar);
+}
+
+.titlebar .item{
+    display: flex;               /* 中の文字やアイコンを中央寄せ */
+    justify-content: center;
+    align-items: center;
+    margin: 2px 19px;
+    padding: 0px 5px;
+    border-radius: 6px 6px;
+    border: solid 1px var(--boder-colar);
+    color: var(--text-colar);
+    font-size: 25px;
+}
+
+.main-content{
+    margin: 30px 15px 0px 0px;
+    justify-self: center;
+    width: 800px;
+    padding: 25px 25px;
+    border-radius: 6px 6px;
+    background-color: var(--2nd-color);
+    color: var(--text-colar);
+}
+
+.sub-person-content{
+    margin: 45px 0px;
+    justify-self: left;
+    width: 200px;
+    padding: 25px 25px;
+    border-radius: 6px 6px;
+    background-color: var(--2nd-color);
+    color: var(--text-colar);
+}
+
+.sub-person-content .icon{
+    justify-self: right;
+    padding-left: 10px;
+    fill: var(--text-colar);
+    text-decoration: none;
+}
+
+.sub-history{
+    margin: 45px 0px;
+    justify-self: left;
+    width: 200px;
+    padding: 25px 25px;
+    border-radius: 6px 6px;
+    background-color: var(--2nd-color);
+    color: var(--text-colar);
+}
+
+.sub-content .icon{
+    margin: 45px 15px;
+    justify-self: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--2nd-color);
+    color: var(--text-colar);
+}
+
+#content {
+  white-space: pre-wrap; /* 改行や空白をそのまま反映 */
+}
+
+h1 {
+  margin-top: 0;        /* 上の余白をなくす */
+  margin-bottom: 0em; /* 下の余白を少しだけ残す */
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0em;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0em;
+}
+
+
+p {
+  margin-top: 0;         /* 段落の上の余白も削る */
+  margin-bottom: 0em;  /* 段落間の余白を少し */
+}
+
+a {
+    color: #007bff;
+}
+a:visited {
+  color: #aa50aa;
+}
