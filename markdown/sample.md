@@ -5,7 +5,7 @@
 # Skills
 - **Languages:** Python, C#, Lua
 - **Frameworks:** WPF, Electron
-- **Tools:** Git, VSCode
+- **Tools:** Git, VSCode, VisualStudio
 - **Learning:** JavaScript, HTML/CSS
 
 # Projects
